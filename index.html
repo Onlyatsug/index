@@ -20,7 +20,7 @@
 <body>
   <main>
     <div class="main-container">
-      <div class="card-info">
+      <div class="card card-info">
         <div class="chead">
           <img src="profile.jpg" alt="Profile">
           <p><b>Gustavo Santana</b><br><span>@onlyatsug</span></p>
@@ -30,26 +30,26 @@
           <p class="p2">#Code</p>
         </div>
         <div class="cfoot">
-          <div class="items">
+          <div class="comment-i items">
             <i class="fa-regular fa-comment"></i>
-            <p>3</p>
+            <p>2</p>
           </div>
-          <div class="items">
+          <div class="like-i items">
             <i class="fa-regular fa-heart"></i>
             <!--<i class="fa-solid fa-heart"></i>-->
-            <p>73</p>
+            <p id="likenumber">16</p>
           </div>
-          <div class="items">
+          <div class="share-i items">
             <i class="fa-solid fa-share"></i>
-            <p>8</p>
+            <p></p>
           </div>
         </div>
       </div>
-      <div class="card-links">
+      <div class="card card-links">
         <div class="cbody">
           <div class="items">
              <i class="fa-brands fa-whatsapp"></i>
-             <a class="WA" href="#">Whatsapp</a>
+             <a class="WA" href="https://api.whatsapp.com/send?phone=5566996729425&text=oi">Whatsapp</a>
           </div>
           <div class="items">
             <i class="fa-brands fa-instagram"></i>
@@ -57,9 +57,17 @@
           </div>
           <div class="items">
             <i class="fa-brands fa-github"></i>
-            <a class="GH" href="#">GitHub</a>
+            <a class="GH" href="https://github.com/Onlyatsug">GitHub</a>
           </div>
         </div>
+      </div>
+      <div class="card card-comment">
+        <form class="form" action="https://formsubmit.co/gsb.jmt@gmail.com" method="POST" />
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="https://onlyatsug.github.io/index/">
+          <input class="textarea" type=text name="Mensagem: "></input>
+          <button type="submit">Enviar</button>
+        </form>
       </div>
     </div>
   </main>
