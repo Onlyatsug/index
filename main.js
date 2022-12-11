@@ -16,7 +16,7 @@ const likeBlank = document.querySelector('#hblank')
 const likeFire = document.querySelector('#hfire')
 const like = document.querySelector('#likenumber');
 let likeOn = false;
-let likeNum = 31;
+let likeNum = 43;
 function likeBtn(){
   if (likeOn == false){
     likeNum = likeNum + 1;
