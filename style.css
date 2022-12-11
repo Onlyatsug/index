@@ -1,9 +1,9 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Josefin Sans', sans-serif;
-    -webkit-tap-highlight-color: transparent;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif;
+  -webkit-tap-highlight-color: transparent;
 }
 
 img {
@@ -12,60 +12,62 @@ img {
   height: 56px;
 }
 
-span {
-  color: rgb(84, 0, 255);
-  font-size: 18px;
-}
-
 body {
-  background-color: #eee;
+  background-color: #100f10;
 }
 
 
 .main-container{
   max-width: 100vw;
   max-height: 100vh;
-  background-color: #eee;
   padding-top: 20px;
-  
   display: grid;
   gap: 20px;
   justify-content: center;
   grid-template: 1fr, 1fr;
-  
 }
 
 .card{
-  background-color: #fff;
+  background-color: #fafafa;
   width: 360px;
-  
   display: grid;
   border-radius: 16px;
-  
-  -webkit-box-shadow: 0px 10px 33px -15px rgba(84, 0, 255, 0.84);
-  box-shadow: 0px 10px 33px -15px rgba(84, 0, 255, 0.84);
+  border: 2px solid #242424;
+  -webkit-box-shadow: 0px 10px 33px -15px rgba(255, 0, 67, 1);
+  box-shadow: 0px 10px 33px -15px rgba(255, 0, 67, 1);
 }
 
-/* card info */
+/* Card Info */
 
 .card-info .chead{
   display: flex;
   align-items: center;
   gap: 20px;
-  
+  padding: 20px 25px;
   font-size: 20px;
+  color: rgba(0, 0, 0, 0.90);
   padding: 20px 25px;
 }
 
-.card-info .cbody{
+.card-info .chead .text01{
+  color: #ff0043;
   font-size: 16px;
+}
+
+.card-info .cbody{
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.75);
   padding: 10px 25px;
   padding-top: 0px;
 }
 
-.card-info .cbody .p2{
-  color: rgb(84, 0, 255);
-  margin-top: 15px;
+.card-info .cbody .main-text{
+  margin-bottom: 15px;
+}
+
+.card-info .cbody .text02{
+  font-size: 16px;
+  color: #ff0043;
 }
 
 .card-info .cfoot{
@@ -80,51 +82,68 @@ body {
   gap: 6px;
   -webkit-transition: all .2s ease-in-out;
 }
+
 .card-info .cfoot .items:active{
   -webkit-transform: scale(1.1);
 }
 
-/* card links */
+/* Card Links */
 
 .card-links .cbody .items {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 6px;
-  
   -webkit-transition: all .2s ease-in-out;
 }
+
 .card-links .cbody .items:active{
   -webkit-transform: scale(1.1);
 }
 
+.card-links .cbody .items i{
+  -webkit-transform: scale(1.2);
+}
 
 .card-links .cbody{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  gap: 20px;
+  justify-content: center;
+  gap: 30px;
   padding-top: 20px;
-  Padding-bottom: 20px;
+  Padding-bottom: 10px;
 }
 
 .card-links .cbody a {
-  padding: 10px 5px;
+  font-family: 'VT323', monospace;
+  font-size: 18px;
+  padding: 10px 12px;
   color: #eee;
   text-decoration: none;
   border-radius: 8px;
+  border: 2px solid rgba(0, 0, 0, 0.34);
 }
 
-/* card comment*/
+.card-links .cfoot{
+  display: flex;
+  justify-content: center;
+  padding: 10px 25px;
+}
+
+/* Card Comentários */
 
 .card-comment{
   display: none;
   border-radius: 16px;
   padding: 10px 25px;
-  background-color: #fff;
+  background-color: #fafafa;
 }
 
 .card-comment button{
+  font-family: 'VT323', monospace;
+  background-color: #1b1b1b;
+  color: #fafafa;
   padding: 6px;
   margin-left: 14px;
 }
@@ -134,15 +153,40 @@ body {
   width: 230px;
 }
 
+/* Créditos */
 
-/* btn style */
+.footer-credit{
+  text-align: center;
+  margin-top: 20%;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/* Paleta de cores das Redes Sociais*/
 
 .IG{
   background-color: rgb(225, 48, 108)
 }
 .GH{
-  background-color: rgba(61, 46, 92, 1)
+  background-color: rgb(61, 46, 92)
 }
 .WA{
   background-color: rgb(37, 211, 102);
+}
+
+/* Interações do User Extras */
+
+#quack{
+  height: 80px;
+  -webkit-transition: all .2s ease-in-out;
+}
+#quack:active{
+  -webkit-transform: scale(1.1);
+}
+
+#hblank{
+  display: block;
+}
+
+#hfire{
+  display: none;
 }

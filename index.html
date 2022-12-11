@@ -5,43 +5,40 @@
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>HTML</title>
+  <title>Onlyatsug Page</title>
   
-  <!-- HTML -->
-  
-
-  <!-- Custom Styles -->
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
 </head>
-
 <body>
   <main>
     <div class="main-container">
       <div class="card card-info">
         <div class="chead">
           <img src="profile.jpg" alt="Profile">
-          <p><b>Gustavo Santana</b><br><span>@onlyatsug</span></p>
+          <p><b>Gustavo Santana</b><br><span class="text01">@onlyatsug</span></p>
         </div>
         <div class="cbody">
-          <p class="p1">Olá pessoa, aqui você vai encontrar links para as minhas redes sociais e projetos.</p>
-          <p class="p2">#Code</p>
+          <p class="main-text">Olá pessoa, aqui você vai encontrar links de redes sociais e projetos.</p>
+          <p><span class="text02">#NaoClickaNoPato<span></p>
         </div>
         <div class="cfoot">
-          <div class="comment-i items">
+          <div onclick="comment()" class="comment-i items">
             <i class="fa-regular fa-comment"></i>
-            <p>2</p>
+            <p>16</p>
           </div>
-          <div class="like-i items">
-            <i class="fa-regular fa-heart"></i>
-            <!--<i class="fa-solid fa-heart"></i>-->
-            <p id="likenumber">16</p>
+          <div onclick="disc(), likeBtn()" class="like-i items">
+            <i id="hblank" class="fa-regular fa-heart"></i>
+            <i id="hfire" class="fa-solid fa-heart"></i>
+            <p id="likenumber">31</p>
           </div>
-          <div class="share-i items">
+          <div onclick="share()" class="share-i items">
             <i class="fa-solid fa-share"></i>
-            <p></p>
+            <p>?</p>
           </div>
         </div>
       </div>
@@ -60,6 +57,11 @@
             <a class="GH" href="https://github.com/Onlyatsug">GitHub</a>
           </div>
         </div>
+        <div class="cfoot">
+          <div>
+            <img id="quack" onclick="quack()" src="duck.gif">
+          </div>
+        </div>
       </div>
       <div class="card card-comment">
         <form class="form" action="https://formsubmit.co/gsb.jmt@gmail.com" method="POST" />
@@ -71,6 +73,11 @@
       </div>
     </div>
   </main>
+  <footer>
+    <div class="footer-credit">
+      <p>Site criado e desenvolvido interamente por: @onlyatsug (eu mesmo). {v2.0}</p>
+    </div>
+  </footer>
   <script src="main.js"></script>
 </body>
 </html>

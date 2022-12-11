@@ -1,10 +1,7 @@
 //On/Off comentários
-const commentBtn = document.querySelector('.comment-i');
 const commentSection = document.querySelector('.card-comment');
-
-let commentOn = false;
-
-commentBtn.addEventListener('click', function(){
+var commentOn = false;
+function comment(){
   if (commentOn == false){
     commentSection.style.display = 'block';
     commentOn = true;
@@ -12,29 +9,41 @@ commentBtn.addEventListener('click', function(){
     commentSection.style.display = 'none';
     commentOn = false;
   }
-});
+};
 
 //Likes
+const likeBlank = document.querySelector('#hblank')
+const likeFire = document.querySelector('#hfire')
 const like = document.querySelector('#likenumber');
-const likeBtn = document.querySelector('.like-i');
-
 let likeOn = false;
-let likeNum = 16;
-
-likeBtn.addEventListener('click', function(){
+let likeNum = 31;
+function likeBtn(){
   if (likeOn == false){
     likeNum = likeNum + 1;
-    like.innerHTML = likeNum
-    likeOn = true
+    like.innerHTML = likeNum;
+    likeOn = true;
+    likeBlank.style.display = 'none';
+    likeFire.style.display = 'block';
   }else{
     likeNum = likeNum - 1;
-    like.innerHTML = likeNum
-    likeOn = false
-  }
-});
+    like.innerHTML = likeNum;
+    likeOn = false;
+    likeFire.style.display = 'none';
+    likeBlank.style.display = 'block';
+  } 
+};
 
-const share = document.querySelector('.share-i');
+// share 
+function share(){
+  alert('Gu: me mande uma mensagem se quiser o/');
+};
 
-share.addEventListener('click', function(){
-  alert('From Gu: Por que diabos alguém iria compartilhar um site assim?')
-})
+// Sons
+function quack(){
+  let beat = new Audio('quack.mp3');
+  beat.play()
+}
+function disc(){
+  let beat = new Audio('discord.mp3');
+  beat.play()
+}
